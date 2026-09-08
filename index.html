@@ -1,29 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Home</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
-    
-    <script src="nav.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Page Layout</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Welcome to my page!</h1>
+  <div class="site-container">
+    
+    <!-- Logo Area -->
+    <header class="logo">
+      <span>Logo</span>
     </header>
 
-    <main>
-        <p>I am an Assistant Professor of Marketing at the Ivy College of Business, Iowa State University.</p>
+    <!-- Top Info Graphic Section -->
+    <section class="info-graphics">
+      <p>This area is for informational graphics which describe in images what your site is about.</p>
+    </section>
 
-        <h2>Research Interests</h2>
-        <ul>
-            <li>Online word-of-mouth</li>
-            <li>Consumer political ideology</li>
-            <li>Consumer decision-making</li>
-        </ul>
+    <!-- Primary Navigation -->
+    <nav class="nav-primary" id="primary-nav-container">
+      <!-- Injected by nav.js -->
+    </nav>
+
+    <!-- Secondary Navigation -->
+    <nav class="nav-secondary" id="secondary-nav-container">
+      <!-- Injected by nav.js -->
+    </nav>
+
+    <!-- Left Navigation / Sidebar -->
+    <aside class="sidebar-nav" id="sidebar-nav-container">
+      <!-- Injected by nav.js -->
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <div class="hero-image">
+        <h2>Hero image at top</h2>
+      </div>
+      <article>
+        <h1>Main content area</h1>
+        <p>This area HAS to contain HTML text and images (i.e. not image text). Text should be around 400 words and contain 5–7% keywords.</p>
+      </article>
     </main>
 
+    <!-- Sticky Right Sidebar -->
+    <aside class="sticky-content">
+      <h3>Sticky content</h3>
+      <ul>
+        <li>News items</li>
+        <li>Adverts</li>
+        <li>Offers</li>
+        <li>General site info</li>
+        <li>Social Networking icons</li>
+      </ul>
+    </aside>
+
+    <!-- Footer Area -->
+    <footer class="site-footer">
+      <p>Footer: Contains copyright info, current year, primary links, contact, privacy statement, webmaster email address.</p>
+    </footer>
+
+  </div>
+
+  <script src="nav.js"></script>
 </body>
 </html>
