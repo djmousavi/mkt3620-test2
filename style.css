@@ -1,0 +1,126 @@
+/* Reset and Box Sizing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Background & Outer Margin Setup */
+body {
+  background-color: skyblue; /* 10% side margins show skyblue */
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.5;
+  padding: 0 10%; /* 10% margin on left and right */
+  min-height: 100vh;
+}
+
+/* Main Layout Container */
+.site-container {
+  background-color: #ffffff;
+  min-height: 100vh;
+  border: 2px solid #000;
+  display: grid;
+  grid-template-columns: 200px 1fr 220px;
+  grid-template-rows: auto auto auto 1fr auto;
+  grid-template-areas:
+    "logo graphics graphics"
+    "logo primary-nav primary-nav"
+    "logo secondary-nav secondary-nav"
+    "sidebar main sticky"
+    "footer footer footer";
+}
+
+/* Common Section Borders & Padding */
+.site-container > header,
+.site-container > nav,
+.site-container > section,
+.site-container > main,
+.site-container > aside,
+.site-container > footer {
+  border: 1px solid #000;
+  padding: 12px;
+}
+
+/* Header Sections */
+.logo {
+  grid-area: logo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.info-graphics {
+  grid-area: graphics;
+  background-color: #fafafa;
+}
+
+/* Navigation Bars */
+.nav-primary {
+  grid-area: primary-nav;
+  background-color: #f0f0f0;
+}
+
+.nav-secondary {
+  grid-area: secondary-nav;
+  background-color: #f7f7f7;
+}
+
+.nav-primary ul,
+.nav-secondary ul,
+.nav-sidebar ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+/* Left Sidebar Navigation */
+.sidebar-nav {
+  grid-area: sidebar;
+  background-color: #fbfbfb;
+}
+
+.sidebar-nav ul {
+  flex-direction: column;
+}
+
+/* Main Content Area */
+.main-content {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.hero-image {
+  width: 100%;
+  max-height: 200px;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeeee;
+}
+
+/* Sticky Right Column */
+.sticky-content {
+  grid-area: sticky;
+  position: sticky;
+  top: 10px;
+  height: fit-content;
+  background-color: #fafafa;
+}
+
+.sticky-content ul {
+  padding-left: 20px;
+}
+
+/* Footer */
+.site-footer {
+  grid-area: footer;
+  text-align: center;
+  font-size: 0.9rem;
+  background-color: #f0f0f0;
+}
