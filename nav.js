@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const navItems = {
     primary: [
       { name: "Home", link: "index.html" },
-      { name: "About", link: "about.html" },
+      { name: "Education", link: "education.html" },
       { name: "Services", link: "services.html" },
       { name: "Contact", link: "contact.html" }
     ],
